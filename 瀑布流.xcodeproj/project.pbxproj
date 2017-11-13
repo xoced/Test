@@ -15,8 +15,11 @@
 		DAF222B11FB58F3700D4B0A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF222B01FB58F3700D4B0A9 /* main.m */; };
 		DAF222BB1FB58F3700D4B0A9 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF222BA1FB58F3700D4B0A9 /* ___Tests.m */; };
 		DAF222C61FB58F3700D4B0A9 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF222C51FB58F3700D4B0A9 /* ___UITests.m */; };
-		DAF3C7DD1FB99476008681DB /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF3C7DC1FB99476008681DB /* a.png */; };
 		DAF3C7E01FB994D6008681DB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3C7DF1FB994D6008681DB /* FirstViewController.m */; };
+		DAF3C7E61FB99897008681DB /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF3C7E21FB99896008681DB /* b.png */; };
+		DAF3C7E71FB99897008681DB /* c.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF3C7E31FB99896008681DB /* c.png */; };
+		DAF3C7E81FB99897008681DB /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF3C7E41FB99896008681DB /* d.png */; };
+		DAF3C7E91FB99897008681DB /* e.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF3C7E51FB99896008681DB /* e.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +56,12 @@
 		DAF222C11FB58F3700D4B0A9 /* 瀑布流UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "瀑布流UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF222C51FB58F3700D4B0A9 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		DAF222C71FB58F3700D4B0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAF3C7DC1FB99476008681DB /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = a.png; path = ../Desktop/a.png; sourceTree = "<group>"; };
 		DAF3C7DE1FB994D6008681DB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DAF3C7DF1FB994D6008681DB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DAF3C7E21FB99896008681DB /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		DAF3C7E31FB99896008681DB /* c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c.png; sourceTree = "<group>"; };
+		DAF3C7E41FB99896008681DB /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
+		DAF3C7E51FB99896008681DB /* e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,9 @@
 		DAF222951FB58F3700D4B0A9 = {
 			isa = PBXGroup;
 			children = (
+				DAF3C7E11FB99896008681DB /* images */,
 				DAF3C7DE1FB994D6008681DB /* FirstViewController.h */,
 				DAF3C7DF1FB994D6008681DB /* FirstViewController.m */,
-				DAF3C7DC1FB99476008681DB /* a.png */,
 				DAF222A01FB58F3700D4B0A9 /* 瀑布流 */,
 				DAF222B91FB58F3700D4B0A9 /* 瀑布流Tests */,
 				DAF222C41FB58F3700D4B0A9 /* 瀑布流UITests */,
@@ -138,6 +144,17 @@
 				DAF222C71FB58F3700D4B0A9 /* Info.plist */,
 			);
 			path = "瀑布流UITests";
+			sourceTree = "<group>";
+		};
+		DAF3C7E11FB99896008681DB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DAF3C7E21FB99896008681DB /* b.png */,
+				DAF3C7E31FB99896008681DB /* c.png */,
+				DAF3C7E41FB99896008681DB /* d.png */,
+				DAF3C7E51FB99896008681DB /* e.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +263,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF3C7E81FB99897008681DB /* d.png in Resources */,
+				DAF3C7E91FB99897008681DB /* e.png in Resources */,
 				DAF222AE1FB58F3700D4B0A9 /* LaunchScreen.storyboard in Resources */,
-				DAF3C7DD1FB99476008681DB /* a.png in Resources */,
 				DAF222AB1FB58F3700D4B0A9 /* Assets.xcassets in Resources */,
+				DAF3C7E61FB99897008681DB /* b.png in Resources */,
 				DAF222A91FB58F3700D4B0A9 /* Main.storyboard in Resources */,
+				DAF3C7E71FB99897008681DB /* c.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
