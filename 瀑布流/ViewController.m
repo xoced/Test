@@ -7,40 +7,32 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
-@property (nonatomic,strong)UICollectionView *collectionView;
-
+#import "FirstViewController.h"
+@interface ViewController ()
+@property (nonatomic,strong)UIButton *checkButton;
 @end
 
 @implementation ViewController
--(UICollectionView*)collectionView
+-(UIButton*)checkButton
 {
-    if (!_collectionView) {
-        UICollectionViewFlowLayout *fl = [[UICollectionViewFlowLayout alloc]init];
-        _collectionView.delegate = self;
-        _collectionView.dataSource = self;
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-300, self.view.frame.size.width, 300) collectionViewLayout:fl];
+    if (!_checkButton) {
+        _checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_checkButton setImage:[UIImage imageNamed:@"a.png"] forState:UIControlStateNormal];
+        _checkButton.frame = CGRectMake(100, 100, 100, 100);
+        [_checkButton addTarget:self action:@selector(check:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _collectionView;
-}
-#pragma delegate
-#pragma datasource
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 30;
-}
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [ collectionView dequeueReusableCellWithReuseIdentifier:@"str" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
-    return cell;
+    return _checkButton;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.checkButton];
 }
-
+-(void)check:(UIButton*)check
+{
+    FirstViewController *first = [[FirstViewController alloc]init];
+    [self presentViewController:first animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
